@@ -9,7 +9,7 @@ public class C_ForLoops {
     // Gebruik een for-loop om een count-down te maken. 3...2...1
 
       for (int i = 3; i > 0; i--) {
-          System.out.println(i + "...");
+          System.out.println(i);
       }
       System.out.println("Lift off!");
 
