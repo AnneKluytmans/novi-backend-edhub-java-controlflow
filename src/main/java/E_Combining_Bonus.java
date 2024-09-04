@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class E_Combining_Bonus {
 
   public static void main(String[] args) {
@@ -12,7 +14,11 @@ public class E_Combining_Bonus {
     // Combination 1
     //
     // implementeer een forloop die alle even nummers print. Je gebruikt hiervoor ook een if statement
-
+    for (int i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 == 0) {
+        System.out.println(numbers[i]);
+      }
+    }
 
 
     //
@@ -24,7 +30,10 @@ public class E_Combining_Bonus {
     int index = 0;
     int accumulator = 0;
     //add while
-
+    while (index < numbers.length && accumulator <= 400) {
+      accumulator += numbers[index];
+      index++;
+    }
     System.out.println(accumulator);
 
   }
